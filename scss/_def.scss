@@ -1,3 +1,11 @@
+$white-color: #fff;
+
+@mixin flexBoxCustom($just, $align, $direct: unset) {
+   display: flex;
+   justify-content: $just;
+   align-items: $align;
+   flex-direction: $direct;
+}
 * {
    margin: 0;
    padding: 0;
@@ -13,4 +21,3 @@ li,
 ul {
    list-style: none;
 }
-
