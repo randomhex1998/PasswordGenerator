@@ -1,14 +1,14 @@
 let passArray = [
-   0,
-   1,
-   2,
-   3,
-   4,
-   5,
-   6,
-   7,
-   8,
-   9,
+   "0",
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9",
    "q",
    "w",
    "e",
@@ -57,3 +57,10 @@ let passArray = [
 let inputBoxShow = document.querySelector("#show-input-box");
 let generateBtn = document.getElementsByClassName("gen")[0];
 let copyBtn = document.getElementsByClassName("copy")[0];
+let index = 8;
+generateBtn.addEventListener("click", () => {
+   inputBoxShow.value = "";
+   for (let i = 0; i < index; i++) {
+      inputBoxShow.value += passArray[Math.floor(Math.random() * passArray.length)];
+   }
+});
