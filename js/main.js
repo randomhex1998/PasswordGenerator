@@ -64,3 +64,8 @@ generateBtn.addEventListener("click", () => {
       inputBoxShow.value += passArray[Math.floor(Math.random() * passArray.length)];
    }
 });
+
+copyBtn.addEventListener("click", () => {
+   inputBoxShow.select();
+   document.execCommand("copy");
+});
