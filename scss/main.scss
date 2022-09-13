@@ -7,6 +7,10 @@
    background-color: #1abc9c;
 
    .box-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
       width: 30%;
       height: 30vh;
       padding: 2rem;
@@ -22,7 +26,7 @@
          width: 100%;
 
          input {
-            // pointer-events: none;
+            pointer-events: none;
             width: 100%;
             height: 3rem;
             font-size: 2rem;
@@ -30,6 +34,20 @@
             border: 1px solid rgb(216, 216, 216);
             outline: none;
             border-radius: 5px;
+         }
+      }
+
+      .btn-grp {
+         @include flexBoxCustom(center, center);
+         width: 100%;
+         //  background-color: crimson;
+         gap: 1rem;
+
+         .btn {
+            padding: 0.7rem 2rem;
+            border: 1px solid rgb(216, 216, 216);
+            outline: none;
+            cursor: pointer;
          }
       }
    }

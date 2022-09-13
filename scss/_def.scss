@@ -1,10 +1,9 @@
 $white-color: #fff;
 
-@mixin flexBoxCustom($just, $align, $direct: unset) {
+@mixin flexBoxCustom($just, $align) {
    display: flex;
    justify-content: $just;
    align-items: $align;
-   flex-direction: $direct;
 }
 * {
    margin: 0;
