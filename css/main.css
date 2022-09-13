@@ -16,6 +16,25 @@ ul {
   list-style: none;
 }
 
+@media screen and (min-width: 0px) {
+  .box-body {
+    width: 98% !important;
+  }
+  .box-body .btn-grp {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 575px) {
+  .box-body {
+    width: 60% !important;
+  }
+}
+@media screen and (min-width: 975px) {
+  .box-body {
+    width: 30% !important;
+  }
+}
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

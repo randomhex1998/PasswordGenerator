@@ -1,6 +1,19 @@
+@media screen and (min-width: 0px) {
+   .box-body {
+      width: 98% !important;
+
+      .btn-grp {
+         flex-wrap: wrap;
+      }
+   }
+}
 @media screen and (min-width: 575px) {
+   .box-body {
+      width: 60% !important;
+   }
 }
 @media screen and (min-width: 975px) {
-}
-@media screen and (min-width: 975px) {
+    .box-body {
+        width: 30% !important;
+     }
 }
